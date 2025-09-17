@@ -1,0 +1,31 @@
+body { margin: 0; font-family: 'Segoe UI', sans-serif; }
+.app { display: flex; flex-direction: column; min-height: 100vh; }
+.tab-bar { display: flex; align-items: center; background-color: #fdd835; padding: 5px 10px; gap: 10px; }
+.tab { padding: 5px 10px; background-color: #fff; border-radius: 5px; cursor: pointer; font-weight: bold; display: flex; align-items: center; gap:5px; }
+.tab.active { background-color: #ffd600; }
+.add-tab { padding: 5px 10px; cursor: pointer; font-weight: bold; }
+.close-tab { background:none; border:none; cursor:pointer; font-weight:bold; color:#333; }
+.tab input { margin-left:10px; }
+
+.tab-bar input { flex:1; padding:5px 10px; border-radius:5px; border:1px solid #ccc; }
+
+.content-area { flex:1; padding:20px; overflow:auto; }
+.tab-frame { width:100%; height:100%; border:none; }
+
+.dashboard { text-align:center; }
+.dashboard h1 { font-size:2rem; margin-bottom:20px; }
+.tiles { display:flex; justify-content:center; flex-wrap:wrap; gap:15px; margin-bottom:30px; }
+.tiles a { display:block; padding:20px 30px; background-color:#fdd835; color:#000; text-decoration:none; font-weight:bold; border-radius:10px; transition:transform 0.2s; }
+.tiles a:hover { transform:translateY(-3px); }
+
+.widgets { display:flex; justify-content:center; gap:30px; font-size:1.2rem; }
+
+.theme-switcher { position:fixed; top:10px; right:10px; display:flex; gap:10px; }
+.theme-switcher button { padding:5px 10px; border:none; border-radius:5px; cursor:pointer; font-weight:bold; }
+
+footer { padding:20px; background-color:#fdd835; text-align:center; font-size:0.9rem; }
+
+/* Themes */
+.theme-default { background:#fff; color:#000; }
+.theme-dark { background:#111; color:#fff; }
+.theme-banana { background:#ffeb3b; color:#000; }
